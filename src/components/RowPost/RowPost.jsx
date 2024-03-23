@@ -23,7 +23,7 @@ function RowPost(props) {
 
   const opts = {
     height: '640',
-    width: '100%',
+    width: '97.5%',
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
       autoplay: 0,
@@ -52,7 +52,7 @@ function RowPost(props) {
             <h4> {obj.title || obj.name} </h4>
           </div>)}
       </div>
-      { urlId && <YouTube className='youtube' videoId={urlId.key} opts={opts}  />}
+      { urlId && <div className='youtube'><YouTube className='youtube-display'  videoId={urlId.key} opts={opts}/> </div> }
     </div>
   )
 }
