@@ -52,7 +52,7 @@ function RowPost(props) {
             <h4> {obj.title || obj.name} </h4>
           </div>)}
       </div>
-      { urlId && <YouTube videoId={urlId.key} opts={opts}  />}
+      { urlId && <YouTube className='youtube' videoId={urlId.key} opts={opts}  />}
     </div>
   )
 }
