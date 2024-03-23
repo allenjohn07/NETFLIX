@@ -22,8 +22,8 @@ function RowPost(props) {
   }, [])
 
   const opts = {
-    height: '640',
-    width: '97.5%',
+    height: '390',
+      width: '640',
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
       autoplay: 0,
